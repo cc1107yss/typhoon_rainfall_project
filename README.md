@@ -17,6 +17,11 @@ Using **CMA best-track data (CMABST)** and **GPM IMERG half-hourly precipitation
 - Identify key drivers with **Spearman correlation + an enhanced Random Forest**.
 - **Result**: test-set R² reaches **0.684 / 0.640** for rainfall-centroid offset and rainband anisotropy; rainfall is systematically biased toward the **front-left** of the motion direction (front-left quadrant carries the largest share).
 
+<p align="center">
+  <img src="outputs/figures/problem1_env/problem1_typical_typhoon_evolution.png" width="88%"><br>
+  <em>Storm-relative rainfall structure and its evolution for a typical typhoon.</em>
+</p>
+
 ### Problem 2 — Rainfall generation for unobserved typhoons
 The 2024 typhoons **KONG-REY** and **MAN-YI** have no matching GPM record, so rainfall simulation is reframed as a **conditional rainfall-field generation** task:
 1. Retrieve historical time steps with similar track, intensity, motion and near-coast conditions (Top-K analog templates);
@@ -25,9 +30,20 @@ The 2024 typhoons **KONG-REY** and **MAN-YI** have no matching GPM record, so ra
 4. Restore the heavy-rain tail with **extreme-quantile calibration**.
 - **Result**: complete half-hourly rainfall sequences for both storms (KONG-REY 421 steps, MAN-YI 553 steps), peak grid intensities of **53.7 / 54.4 mm·h⁻¹**, with the main rain area on the front-left of the track.
 
+<p align="center">
+  <img src="outputs/figures/problem2_env/KONG_REY_final_representative_fields.png" width="88%"><br>
+  <em>Generated representative half-hourly rainfall fields for KONG-REY (no GPM observations exist for this storm).</em>
+</p>
+
 ### Problem 3 — Virtual-typhoon scenario simulation
 Using KONG-REY as the baseline, construct virtual scenarios — **intensified, shifted closer to coast, slowed translation, compound perturbations** — and feed the perturbed variables back into the Problem-2 generator.
 - **Result**: the slowed-translation scenario (S4) amplifies fixed-location accumulation and duration the most — peak accumulated rainfall rises from **723.5 mm → 1208.1 mm** and maximum heavy-rain duration from **24.5 h → 39.0 h**, highlighting how a stalling typhoon magnifies extreme-rainfall risk.
+
+| Baseline (S0) | Slowed translation (S4) |
+|:---:|:---:|
+| <img src="outputs/figures/problem3/problem3_accum_rain_S0.png" width="100%"> | <img src="outputs/figures/problem3/problem3_accum_rain_S4.png" width="100%"> |
+
+<p align="center"><em>Accumulated rainfall — baseline vs. slowed-translation scenario. A stalling typhoon sharply amplifies fixed-location accumulation (723.5 → 1208.1 mm).</em></p>
 
 ### Model validation
 A **historical pseudo-missing experiment** treats real GPM-observed typhoons as unknown events and reconstructs them with the same pipeline. After extreme-quantile calibration, P95 error, P99 error, and 10 mm·h⁻¹ heavy-rain-area error drop by **39.7% / 39.4% / 37.1%** relative to the raw template field.
