@@ -1,7 +1,0 @@
-# Problem-2 Final Results Run Log
-
-- status: SUCCESS
-- project_root: /Users/chenchen/typhoon_rainfall_project
-
-## Issues
-- None

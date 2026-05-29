@@ -1,7 +1,0 @@
-# Problem-2 Geographic Backprojection Run Log
-
-- status: success
-- project_root: /Users/chenchen/typhoon_rainfall_project
-
-## Issues
-- None
