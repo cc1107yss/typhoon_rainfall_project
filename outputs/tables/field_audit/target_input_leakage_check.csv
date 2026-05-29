@@ -1,0 +1,4 @@
+﻿output,n_columns,n_banned_columns,banned_columns,status
+data/processed/target_typhoon_inputs_2024_track_points_leakage_safe.csv,49,0,,pass
+data/processed/target_typhoon_inputs_2024_halfhour_leakage_safe.csv,49,0,,pass
+data/processed/target_typhoon_model_x_2024_halfhour.csv,29,0,,pass

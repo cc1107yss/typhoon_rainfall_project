@@ -1,0 +1,13 @@
+typhoon_name,key_type,lon,lat,value,unit,related_time,nearest_track_time,nearest_track_distance_km,explanation
+KONG-REY,max_cumulative_rain,124.89999999999998,18.6,722.0471801757812,mm,NA,2024-10-29 21:00:00,44.24891261866457,Maximum accumulated rainfall on the fixed geographic grid.
+KONG-REY,max_rain_mmhr,132.2,15.2,51.1731071472168,mm/hr,2024-10-27 00:00:00,2024-10-27 04:00:00,166.792474802154,Maximum half-hour rain rate after geographic backprojection.
+KONG-REY,max_duration10,131.10000000000002,15.5,27.0,h,NA,2024-10-27 13:00:00,133.44588303329908,Longest duration with rain rate >=10 mm/hr.
+KONG-REY,max_duration20,127.69999999999999,16.5,17.0,h,NA,2024-10-28 16:00:00,72.24919153072783,Longest duration with rain rate >=20 mm/hr.
+KONG-REY,cumulative_rain_p99_location,124.19999999999999,20.2,406.7957458496094,mm,NA,2024-10-30 08:30:00,22.87908773353238,Representative location closest to the nonzero P99 accumulated rainfall.
+KONG-REY,duration10_p99_location,131.7,15.5,21.0,h,NA,2024-10-27 08:30:00,133.48149186520217,Representative location closest to the nonzero P99 duration >=10 mm/hr.
+MAN-YI,max_cumulative_rain,153.2,13.9,533.59228515625,mm,NA,2024-11-11 05:30:00,100.65930748487493,Maximum accumulated rainfall on the fixed geographic grid.
+MAN-YI,max_rain_mmhr,135.39999999999998,9.7,53.529441833496094,mm/hr,2024-11-14 10:00:00,2024-11-14 11:00:00,89.03075704507165,Maximum half-hour rain rate after geographic backprojection.
+MAN-YI,max_duration10,153.10000000000002,13.8,23.5,h,NA,2024-11-11 06:00:00,101.21064143153299,Longest duration with rain rate >=10 mm/hr.
+MAN-YI,max_duration20,154.8,14.6,13.0,h,NA,2024-11-10 14:00:00,107.65901316293444,Longest duration with rain rate >=20 mm/hr.
+MAN-YI,cumulative_rain_p99_location,123.69999999999999,13.3,306.4651794433594,mm,NA,2024-11-16 15:30:00,103.81453820381088,Representative location closest to the nonzero P99 accumulated rainfall.
+MAN-YI,duration10_p99_location,152.0,13.2,16.5,h,NA,2024-11-11 12:00:00,126.53350187608288,Representative location closest to the nonzero P99 duration >=10 mm/hr.

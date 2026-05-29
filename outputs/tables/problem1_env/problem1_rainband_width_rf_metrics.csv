@@ -1,0 +1,2 @@
+﻿target,n_samples,random_split_r2,random_split_mae,random_split_rmse,group_split_r2,group_split_mae,group_split_rmse,group_n_test_events
+rainband_width_km,33310,0.7084512775734191,154.8097795014568,200.3922591244531,-0.015019917060747456,311.33899194742,393.24868758293513,28

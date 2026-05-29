@@ -1,0 +1,9 @@
+﻿feature,source_column,missing_rate_before,missing_rate_after,non_missing_count
+is_land,is_land_envsrc,0.0,0.0,32842
+signed_coast_dist_km,signed_coast_dist_km_envsrc,0.0,0.0,32842
+coast_dist_km,coast_dist_km_envsrc,0.0,0.0,32842
+landfrac_200km,landfrac_200km_envsrc,1.0,0.0,32842
+landfrac_500km,landfrac_500km,0.0,0.0,32842
+terrain_mean_300km,terrain_mean_300km,0.0,0.0,32842
+terrain_max_300km,terrain_max_300km,0.0,0.0,32842
+terrain_std_300km,terrain_std_300km,0.0,0.0,32842

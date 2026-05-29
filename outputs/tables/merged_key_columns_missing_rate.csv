@@ -1,0 +1,16 @@
+﻿,0
+track_move_speed_kmh,0.01945583525397348
+track_move_dir_deg,0.01945583525397348
+rain_max,0.0
+rain_p95,0.0
+rain_area_10_grid,0.0
+centroid_offset_km,0.0
+asym_EW,0.0
+asym_NS,0.0
+r80_km,0.0
+anisotropy,0.0
+track_pressure,0.0
+track_wind,0.0
+track_is_land,0.0
+track_coast_dist_km,0.0
+track_signed_coast_dist_km,0.0

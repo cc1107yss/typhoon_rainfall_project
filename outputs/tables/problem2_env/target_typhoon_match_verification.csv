@@ -1,0 +1,3 @@
+﻿name,event_uid,start,end,n_times,lon_min,lon_max,lat_min,lat_max,WND_max,PRES_min,gpm_rows_by_event_uid,gpm_rows_by_name
+KONG-REY,CH2024_0023,2024-10-24 18:00:00,2024-11-02 12:00:00,421,119.89999999999998,146.5,12.8,34.7,60.0,920.0,0,0
+MAN-YI,CH2024_0026,2024-11-08 12:00:00,2024-11-20 00:00:00,553,111.0,163.60000000000002,10.4,18.8,62.0,920.0,0,0

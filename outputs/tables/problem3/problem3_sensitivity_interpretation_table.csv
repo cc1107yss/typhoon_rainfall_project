@@ -1,0 +1,6 @@
+scenario_id,control_factor,most_sensitive_metric,observed_change,physical_explanation,paper_sentence
+S1,Intensity enhancement,area10,6.701423415437315,Higher WND with lower PRES changes the intensity-sensitive rain-rate tail and heavy-rain footprint.,S1 mainly modifies rainfall intensity; P99 changes by 4.0% relative to S0.
+S2,Near-coast/westward path shift,centroid_shift_km,104.75893476377755,Track displacement changes where the storm-relative rain shield is projected on the fixed map.,S2 changes the geographic footprint; the accum>=100 mm IoU versus S0 is 0.67.
+S3,Nearshore segment/landfall shift,1-IoU_D10_3h,22.26844596267662,A localized path perturbation transfers the coastal impact belt while retaining the broader storm evolution.,S3 relocates nearshore exposure; the rainfall centroid shifts 22.0 km.
+S4,Slower translation,max_accum,66.9840925959765,"Reduced translation speed extends exposure time at fixed locations, amplifying accumulation and D10 duration.",S4 is most interpretable as a residence-time scenario; geo D10 changes by 59.2%.
+S5,Compound moderate high-risk perturbation,max_accum,30.98640111751205,"Moderate intensity, path, and speed perturbations combine rate, footprint, and residence-time effects.",S5 combines multiple controls; total rainfall volume index changes by 20.4%.

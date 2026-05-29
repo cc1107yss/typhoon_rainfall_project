@@ -1,0 +1,25 @@
+﻿check,item,value
+status_count,ok,33310
+status_count,missing_center_or_motion,110
+valid_count,rainband_width_km,33310
+nan_count,rainband_width_km,110
+inf_count,rainband_width_km,0
+valid_count,rainband_length_km,33310
+nan_count,rainband_length_km,110
+inf_count,rainband_length_km,0
+valid_count,rainband_aspect_ratio,33310
+nan_count,rainband_aspect_ratio,110
+inf_count,rainband_aspect_ratio,0
+valid_count,rainband_width10_km,32568
+nan_count,rainband_width10_km,852
+inf_count,rainband_width10_km,0
+valid_count,rainband_length10_km,32568
+nan_count,rainband_length10_km,852
+inf_count,rainband_length10_km,0
+valid_count,rainband_aspect_ratio10,32568
+nan_count,rainband_aspect_ratio10,852
+inf_count,rainband_aspect_ratio10,0
+rows_total,all,33420
+output_file,data/processed/env_added/gpm_track_model_features_interp_env.csv,
+copy_file,data/processed/env_added/gpm_track_model_features_interp_env_rainband_width.csv,
+coordinate_basis,GeoTIFF lon/lat rotated to storm motion using 111.32*cos(lat) and 111.32 km/deg,

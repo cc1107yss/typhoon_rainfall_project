@@ -1,0 +1,135 @@
+{
+  "script": "18_find_topk_historical_analogs.py",
+  "k": 20,
+  "inputs": {
+    "historical_library_index": "data/processed/problem2_historical_library_index.csv",
+    "target_aligned_x": "data/processed/problem2_target_model_x_aligned.csv",
+    "target_full_metadata": "data/processed/target_typhoon_inputs_2024_halfhour_leakage_safe.csv",
+    "x_feature_cols": "outputs/tables/problem2/problem2_x_feature_cols.csv",
+    "robust_scaler_stats": "outputs/tables/problem2/problem2_robust_scaler_stats.csv"
+  },
+  "outputs": {
+    "target_topk_similar_history": "data/processed/problem2_target_topk_similar_history.csv",
+    "summary": "outputs/tables/problem2/problem2_target_topk_similarity_summary.csv",
+    "report": "outputs/tables/problem2/target_topk_similarity_report.json"
+  },
+  "history_shape": [
+    33420,
+    100
+  ],
+  "target_shape_after_metadata_enrichment": [
+    974,
+    49
+  ],
+  "target_metadata_enrichment": {
+    "target_full_file": "data/processed/target_typhoon_inputs_2024_halfhour_leakage_safe.csv",
+    "used": true,
+    "full_shape": [
+      974,
+      49
+    ],
+    "merge_keys": [
+      "event_uid",
+      "time"
+    ],
+    "merged": true,
+    "added_columns": [
+      "source_file",
+      "typhoon_id",
+      "storm_seq",
+      "typhoon_code",
+      "record_count",
+      "cadence_hours",
+      "center_lon",
+      "center_lat",
+      "track_lat",
+      "track_lon_180",
+      "track_intensity",
+      "track_dt_h",
+      "track_move_distance_km",
+      "track_move_dir_deg",
+      "year",
+      "month",
+      "day",
+      "hour",
+      "wind_z",
+      "pressure_deficit_z"
+    ],
+    "unmatched_rows": 0
+  },
+  "x_features_n": 27,
+  "x_features": [
+    "track_wind",
+    "track_pressure",
+    "pressure_deficit",
+    "intensity_index",
+    "track_wind_change_rate",
+    "track_pressure_change_rate",
+    "is_intensifying_wind",
+    "is_weakening_wind",
+    "is_intensifying_pressure",
+    "is_weakening_pressure",
+    "track_move_dir_sin",
+    "track_move_dir_cos",
+    "track_move_speed_kmh",
+    "track_is_land",
+    "track_coast_dist_km",
+    "track_signed_coast_dist_km",
+    "is_near_coast_100km",
+    "is_near_coast_200km",
+    "is_offshore_far_300km",
+    "is_inland_100km",
+    "coast_influence_exp",
+    "month_sin",
+    "month_cos",
+    "hour_sin",
+    "hour_cos",
+    "track_lat",
+    "track_lon_180"
+  ],
+  "extra_safe_features_added": [
+    "track_lat",
+    "track_lon_180"
+  ],
+  "target_summary": {
+    "KONGREY": {
+      "rows": 421,
+      "time_min": "2024-10-24 18:00:00",
+      "time_max": "2024-11-02 12:00:00",
+      "track_lon_180_min": 119.89999999999998,
+      "track_lon_180_max": 146.5,
+      "track_lat_min": 12.8,
+      "track_lat_max": 34.7,
+      "center_lon_min": 119.89999999999998,
+      "center_lon_max": 146.5,
+      "center_lat_min": 12.8,
+      "center_lat_max": 34.7
+    },
+    "MANYI": {
+      "rows": 553,
+      "time_min": "2024-11-08 12:00:00",
+      "time_max": "2024-11-20 00:00:00",
+      "track_lon_180_min": 111.0,
+      "track_lon_180_max": 163.60000000000002,
+      "track_lat_min": 10.4,
+      "track_lat_max": 18.8,
+      "center_lon_min": 111.0,
+      "center_lon_max": 163.60000000000002,
+      "center_lat_min": 10.4,
+      "center_lat_max": 18.8
+    }
+  },
+  "topk_rows_n": 19480,
+  "history_tif_path_exists_rate_in_topk": 1.0,
+  "gpm_precip_rate_unit": "mm/hr",
+  "halfhour_accumulation_factor_hours": 0.5,
+  "unit_note": "A 10 mm/hr GPM snapshot corresponds to 5 mm accumulated precipitation over 30 minutes.",
+  "hard_rules": {
+    "target_like_history_names_n": 0,
+    "target_required_names_present": [
+      "KONGREY",
+      "MANYI"
+    ],
+    "passed": true
+  }
+}

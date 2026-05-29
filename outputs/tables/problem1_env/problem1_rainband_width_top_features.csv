@@ -1,0 +1,11 @@
+﻿target,rank,feature,importance
+rainband_width_km,1,track_move_dir_sin,0.4829734278542797
+rainband_width_km,2,month_cos,0.4044649217659546
+rainband_width_km,3,track_move_speed_kmh,0.2600447130577816
+rainband_width_km,4,landfrac_500km,0.16647887283013768
+rainband_width_km,5,track_wind,0.16526671803379317
+rainband_width_km,6,track_move_dir_cos,0.14650329653970842
+rainband_width_km,7,intensity_index,0.09555853320905197
+rainband_width_km,8,month_sin,0.07590438750809773
+rainband_width_km,9,terrain_mean_300km,0.06197381218605903
+rainband_width_km,10,coast_influence_exp,0.055509272943848185

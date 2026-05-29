@@ -1,0 +1,81 @@
+{
+  "final_env_setting": "base-old",
+  "final_env_features": [
+    "is_land",
+    "signed_coast_dist_km",
+    "coast_dist_km"
+  ],
+  "ablation_csv": "outputs/tables/problem2_env/env_ablation_validation.csv",
+  "comparison_csv": "outputs/tables/problem2_env/env_ablation_vs_old_problem2.csv",
+  "selected_vs_old": {
+    "env_setting": "base-old",
+    "RMSE_old": 2.681531101371443,
+    "RMSE_new": 2.681531101371443,
+    "RMSE_delta": 0.0,
+    "RMSE_pct_delta": 0.0,
+    "MAE_old": 0.9607063291258278,
+    "MAE_new": 0.9607063291258278,
+    "MAE_delta": 0.0,
+    "MAE_pct_delta": 0.0,
+    "Corr_old": 0.3531155155944261,
+    "Corr_new": 0.3531155155944261,
+    "Corr_delta": 0.0,
+    "Corr_pct_delta": 0.0,
+    "P95_error_old": 1.9351397652528248,
+    "P95_error_new": 1.9351397652528248,
+    "P95_error_delta": 0.0,
+    "P95_error_pct_delta": 0.0,
+    "P99_error_old": 5.922849191445858,
+    "P99_error_new": 5.922849191445858,
+    "P99_error_delta": 0.0,
+    "P99_error_pct_delta": 0.0,
+    "Rmax_error_old": 19.078772232681512,
+    "Rmax_error_new": 19.078772232681512,
+    "Rmax_error_delta": 0.0,
+    "Rmax_error_pct_delta": 0.0,
+    "A10_error_old": 39214.375,
+    "A10_error_new": 39214.375,
+    "A10_error_delta": 0.0,
+    "A10_error_pct_delta": 0.0,
+    "A20_error_old": 16833.59375,
+    "A20_error_new": 16833.59375,
+    "A20_error_delta": 0.0,
+    "A20_error_pct_delta": 0.0,
+    "CSI10_old": 0.1096638509608593,
+    "CSI10_new": 0.1096638509608593,
+    "CSI10_delta": 0.0,
+    "CSI10_pct_delta": 0.0,
+    "F1_10_old": 0.177330024561417,
+    "F1_10_new": 0.177330024561417,
+    "F1_10_delta": 0.0,
+    "F1_10_pct_delta": 0.0
+  },
+  "final_summary_csv": "outputs/tables/problem2_env/problem2_final_typhoon_metrics_summary.csv",
+  "geographic_summary_csv": "outputs/tables/problem2_env/problem2_final_geographic_summary.csv",
+  "field_quality": {
+    "calibrated": {
+      "nan": 0,
+      "inf": 0,
+      "negative": 0,
+      "all_zero_fields": 0
+    },
+    "geographic": {
+      "nan": 0,
+      "inf": 0,
+      "negative": 0,
+      "all_zero_fields": 0
+    }
+  },
+  "geographic_figures": {
+    "expected": [
+      "outputs/figures/problem2_env/KONG_REY_final_cumulative_rain_geographic.png",
+      "outputs/figures/problem2_env/KONG_REY_final_max_rain_geographic.png",
+      "outputs/figures/problem2_env/KONG_REY_final_duration10_geographic.png",
+      "outputs/figures/problem2_env/MAN_YI_final_cumulative_rain_geographic.png",
+      "outputs/figures/problem2_env/MAN_YI_final_max_rain_geographic.png",
+      "outputs/figures/problem2_env/MAN_YI_final_duration10_geographic.png"
+    ],
+    "missing": [],
+    "zero_size": []
+  }
+}
