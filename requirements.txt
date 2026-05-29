@@ -1,0 +1,10 @@
+# 台风极端降水建模项目依赖
+# Python 3.9+ ；建议在虚拟环境中安装：pip install -r requirements.txt
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+rasterio
+shapely
+tqdm
