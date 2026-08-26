@@ -4,6 +4,8 @@
 
 > Mathematical-modeling competition project. Built around the **track–intensity–environment–rainfall** relationship, it combines rainfall-structure analysis, rainfall-field generation for unobserved typhoons, and virtual-scenario simulation into one pipeline.
 
+> **Award:** This project received Second Prize in the Beijing Normal University Mathematical Modeling Competition.
+
 Using **CMA best-track data (CMABST)** and **GPM IMERG half-hourly precipitation**, the project abstracts typhoon rainfall from raw gridded fields into a set of interpretable structural metrics, then applies machine learning and analog-template transfer to go from *explaining historical patterns* → *generating rainfall for unobserved storms* → *simulating future virtual scenarios*.
 
 ---
